@@ -10,6 +10,7 @@ module Players
         end
       end
       occupied_spaces = []
+      input.cells=[" ", "X", " ", "X", " ", " ", " ", "X", " "]
       input.cells.each_with_index do |x, index|
         if x == self.token
           occupied_spaces << input.cells[index]
@@ -17,7 +18,7 @@ module Players
         binding.pry
       end
 
-
+input.cells=[" ", "X", " ", "X", " ", " ", " ", "X", " "]
 
       # optional_moves.first
     end
