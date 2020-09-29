@@ -7,7 +7,7 @@ module Players
       corner = [1,3,7,9]
       edge = [2,4,6,8]
       move_list.map do |x|
-        binding.pry
+        # binding.pry
         if !input.taken?(x)
           x
         end
