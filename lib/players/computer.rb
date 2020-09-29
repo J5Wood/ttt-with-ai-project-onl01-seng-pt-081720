@@ -10,6 +10,7 @@ module Players
         if !input.taken?(x)
           x
         end
+      end
       #first priority is stop 3 in a row
       #selects center first
       #selects corner next
