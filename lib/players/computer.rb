@@ -16,7 +16,7 @@ module Players
         end
         binding.pry
       end
-      
+
 
 
       # optional_moves.first
