@@ -13,7 +13,7 @@ module Players
           optional_moves << x
         end
       end
-      binding.pry
+
       #first priority is stop 3 in a row
       #selects center first
       #selects corner next
