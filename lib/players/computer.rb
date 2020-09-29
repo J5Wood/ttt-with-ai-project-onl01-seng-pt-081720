@@ -10,7 +10,7 @@ module Players
       if !input.taken?(5)
         5
       elsif input.taken?(corner.random)
-      binding.pry
+      end
       #first priority is stop 3 in a row
       #selects center first
       #selects corner next
