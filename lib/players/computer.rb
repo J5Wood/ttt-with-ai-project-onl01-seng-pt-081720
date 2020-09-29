@@ -37,7 +37,7 @@ module Players
           binding.pry
         end
       end
-          
+
       # better_chance.each do |x|
       #   # x.uniq.each do |y|
       #
