@@ -87,8 +87,9 @@ class Game
     puts ""
     puts "Would you like to play with 0, 1 or 2 players?"
     inp = gets
-    until inp == "exit"
-      if inp.to_i == 0
+    if inp == "exit"
+      break
+    elsif inp.to_i == 0
         Game.new(Players::Computer.new("X"),Players::Computer.new("O")).play
       elsif inp.to_i == 1
         Game.new(Players::Human.new("X"),Players::Computer.new("O")).play
