@@ -33,7 +33,7 @@ module Players
       binding.pry
       # better_chance.each do |x|
       #   # x.uniq.each do |y|
-      # 
+      #
       #   # binding.pry
       # end
       # optional_moves.first
