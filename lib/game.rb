@@ -12,8 +12,22 @@ class Game
     @board = board
   end
 
-  def current_player
+  def turn_counter
+    turn_counter = 0
+    @board.cells.map do |x|
+      if x == "X" || x == "O"
+        turn_counter += 1
+      end
+    end
+    turn_counter
+  end
 
+  def current_player
+    if turn_counter % 2 == 0
+      @player_1
+    else
+      @player_2
+    end
   end
 
   def won?
@@ -35,12 +49,33 @@ class Game
   end
 
   def draw?
-    # binding.pry
-    if self.over? && !self.won?
+    self.over? && !self.won?
+  end
+
+  def winner
+    if self.won?
+      winner = @board.cells[self.won?[0]]
     end
   end
-  # provide basic runtime and logic
-  # current player, won? winner
-  #start play turn
+
+  def turn
+    requested_move = current_player.move(@board)
+    while !@board.valid_move?(requested_move)
+      puts "invalid"
+      requested_move = current_player.move(@board)
+    end
+    @board.update(requested_move, current_player)
+  end
+
+  def play
+    until self.won? || self.draw?
+      self.turn
+    end
+    if self.won?
+      puts "Congratulations #{self.winner}!"
+    else
+      puts "Cat\'s Game!"
+    end
+  end
 
 end
