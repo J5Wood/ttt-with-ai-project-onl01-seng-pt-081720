@@ -28,9 +28,10 @@ module Players
           end
         end
       end
-      binding.pry
+      # binding.pry
       better_chance = good_chance.combination(2).select {|a, b| a == b }
       better_chance.each do |x|
+        x.uniq
         binding.pry
       end
       # optional_moves.first
