@@ -86,16 +86,18 @@ class Game
     puts ""
     puts "Welcome to TicTacToe!"
     puts ""
-    puts "Would you like to play with 0, 1 or 2 players?"
+    puts "Would you like to play with zero, one or two players?"
     inp = gets
     while inp != 'exit' do
-      if inp == "0"
+      if inp == "zero"
         Game.new(Players::Computer.new("X"),Players::Computer.new("O")).play
-      elsif inp == "1"
+      elsif inp == "one"
         Game.new(Players::Human.new("X"),Players::Computer.new("O")).play
-      else
+      elsif inp == "two"
       puts "Please decide who wants to be 'X' and go first."
         Game.new(Players::Human.new("X"),Players::Human.new("O")).play
+      elsif inp == "exit"
+        break
       end
       puts "Thanks for playing!"
       puts "You can exit by typing 'exit' or simply hit enter to play again!"
