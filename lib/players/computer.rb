@@ -1,9 +1,8 @@
 module Players
-  class Human < Player
+  class Computer < Player
 
     def move(input)
-      puts "Select which space you would like to move to: "
-      gets
+
     end
 
   end
