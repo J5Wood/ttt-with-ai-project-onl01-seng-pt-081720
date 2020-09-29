@@ -8,16 +8,10 @@ module Players
       # edge = [2,4,6,8]
       optional_moves = []
       move_list.map do |x|
-        # binding.pry
         if !input.taken?(x)
           optional_moves << x
         end
       end
-
-      #first priority is stop 3 in a row
-      #selects center first
-      #selects corner next
-      #selects to finish row
       optional_moves.first
     end
 
