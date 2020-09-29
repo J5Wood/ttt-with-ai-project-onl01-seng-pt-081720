@@ -34,7 +34,7 @@ module Players
       better_selection.each do |x|
         if !occupied_spaces.include?(x) && input.valid_move?(x)
           x
-          binding.pry
+          # binding.pry
         end
       end
 
