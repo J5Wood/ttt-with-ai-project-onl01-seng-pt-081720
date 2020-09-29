@@ -98,7 +98,6 @@ class Game
       end
       puts "Thanks for playing!"
       puts "You can exit by typing 'exit' or simply hit enter to play again!"
-      input = gets
     end
 
 
