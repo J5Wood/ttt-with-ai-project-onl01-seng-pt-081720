@@ -86,6 +86,7 @@ class Game
     puts "Welcome to TicTacToe!"
     puts ""
     puts "Would you like to play with 0, 1 or 2 players?"
+    inp = gets
     while inp != "exit"
       inp = gets
       if inp.to_i == 0
