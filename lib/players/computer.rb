@@ -21,7 +21,13 @@ module Players
         end
       end
       binding.pry
-
+      good_chance = []
+      WIN_COMBINATIONS.each do |x|
+        x.map do |y|
+          if occupied_spaces.include?(y)
+            good_chance << x
+          end
+        end
 
       # optional_moves.first
     end
