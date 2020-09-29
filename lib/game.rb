@@ -96,8 +96,6 @@ class Game
       elsif inp.to_i == 2
       puts "Please decide who wants to be 'X' and go first."
         Game.new(Players::Human.new("X"),Players::Human.new("O")).play
-      elsif inp == "exit"
-        break
       else
         "Incorrect selection, please select again."
       end
