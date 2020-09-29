@@ -30,7 +30,9 @@ module Players
       end
       binding.pry
       better_chance = good_chance.combination(2).select {|a, b| a == b }
-      better_chance.each
+      better_chance.each do |x|
+        binding.pry
+        if !occupied_spaces.include?(x)
       # optional_moves.first
     end
 
