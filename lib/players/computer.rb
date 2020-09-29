@@ -33,7 +33,6 @@ module Players
       # binding.pry
       # better_selection.each do |x|
       #   if !occupied_spaces.include?(x) && input.valid_move?(x.to_s)
-      #     yo = x
       #     # binding.pry
       #   end
       # end
