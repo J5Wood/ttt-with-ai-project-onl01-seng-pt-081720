@@ -95,7 +95,7 @@ class Game
         Game.new(Players::Human.new("X"),Players::Computer.new("O")).play
       else
       puts "Please decide who wants to be 'X' and go first."
-        Game.new(Players::Human.new("X"),Players::Human.new("O"))
+        Game.new(Players::Human.new("X"),Players::Human.new("O")).play
       end
       puts "Thanks for playing!"
       puts "You can exit by typing 'exit' or simply hit enter to play again!"
