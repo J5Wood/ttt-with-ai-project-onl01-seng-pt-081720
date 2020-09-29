@@ -31,6 +31,13 @@ module Players
       better_chance = good_chance.combination(2).select {|a, b| a == b }
       better_selection = better_chance[0].uniq
       binding.pry
+      better_selection.each do |x|
+        if occupied_spaces.include?(x) && input.valid_move(x)
+          x
+          binding.pry
+        end
+      end
+          
       # better_chance.each do |x|
       #   # x.uniq.each do |y|
       #
