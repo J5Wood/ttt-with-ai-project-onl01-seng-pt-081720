@@ -7,10 +7,10 @@ module Players
       corner = [1,3,7,9]
       edge = [2,4,6,8]
       binding.pry
-      if !input.taken?(5)
-        5
-      elsif input.taken?(corner.random)
-      end
+      # if !input.taken?(5)
+      #   5
+      # elsif input.taken?(corner.random)
+      # end
       #first priority is stop 3 in a row
       #selects center first
       #selects corner next
