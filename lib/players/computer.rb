@@ -15,8 +15,8 @@ module Players
         if x == self.token
           occupied_spaces << index
         end
-        binding.pry
       end
+      binding.pry
 
 
       # optional_moves.first
