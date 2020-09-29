@@ -13,37 +13,37 @@ module Players
           optional_moves << x
         end
       end
-      occupied_spaces = []
-      input.cells=[" ", "X", " ", "X", " ", " ", " ", "X", " "]
-      input.cells.each_with_index do |x, index|
-        if x == self.token
-          occupied_spaces << index
-        end
-      end
-      good_chance = []
-      WIN_COMBINATIONS.each do |x|
-        x.map do |y|
-          if occupied_spaces.include?(y)
-            good_chance << x
-          end
-        end
-      end
-      better_chance = good_chance.combination(2).select {|a, b| a == b }
-      better_selection = better_chance[0].uniq
-      binding.pry
-      better_selection.each do |x|
-        if !occupied_spaces.include?(x) && input.valid_move?(x.to_s)
-          x
-          # binding.pry
-        end
-      end
-
-      # better_chance.each do |x|
-      #   # x.uniq.each do |y|
-      #
-      #   # binding.pry
+      # occupied_spaces = []
+      # input.cells=[" ", "X", " ", "X", " ", " ", " ", "X", " "]
+      # input.cells.each_with_index do |x, index|
+      #   if x == self.token
+      #     occupied_spaces << index
+      #   end
       # end
-      # optional_moves.first
+      # good_chance = []
+      # WIN_COMBINATIONS.each do |x|
+      #   x.map do |y|
+      #     if occupied_spaces.include?(y)
+      #       good_chance << x
+      #     end
+      #   end
+      # end
+      # better_chance = good_chance.combination(2).select {|a, b| a == b }
+      # better_selection = better_chance[0].uniq
+      # binding.pry
+      # better_selection.each do |x|
+      #   if !occupied_spaces.include?(x) && input.valid_move?(x.to_s)
+      #     yo = x
+      #     # binding.pry
+      #   end
+      # end
+      # 
+      # # better_chance.each do |x|
+      # #   # x.uniq.each do |y|
+      # #
+      # #   # binding.pry
+      # # end
+      optional_moves.first
     end
 
 
