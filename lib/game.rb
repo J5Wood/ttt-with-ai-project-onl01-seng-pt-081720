@@ -98,6 +98,8 @@ class Game
         Game.new(Players::Human.new("X"),Players::Human.new("O")).play
       elsif inp == "exit"
         break
+      else
+        "Incorrect selection, please select again."
       end
       puts "Thanks for playing!"
       puts "You can exit by typing 'exit' or simply hit enter to play again!"
