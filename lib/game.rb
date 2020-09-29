@@ -81,8 +81,20 @@ class Game
 
 
   def start
-
-
+    puts ""
+    puts "Welcome to TicTacToe!"
+    puts ""
+    puts "Would you like to play with 0, 1 or 2 players?"
+    input = gets.to_i
+    if input == 0
+      Game.new(Players::Computer.new("X"),Players::Computer.new("O"))
+    elsif input == 1
+      Game.new(Players::Human.new("X"),Players::Computer.new("O"))
+    else
+    puts "Please decide who wants to be 'X' and go first."
+      Game.new(Players::Human.new("X"),Players::Human.new("O"))
+    end
+    
 
 
 
