@@ -10,13 +10,13 @@ module Players
         end
       end
       occupied_spaces = []
-      input.cells.each do |x| 
+      input.cells.each do |x|
         if x == self.token
           occupied_spaces << x
         end
       end
-          
-          
+
+
       # optional_moves.first
     end
 
