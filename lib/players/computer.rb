@@ -20,7 +20,7 @@ module Players
           occupied_spaces << index
         end
       end
-      binding.pry
+      # binding.pry
       good_chance = []
       WIN_COMBINATIONS.each do |x|
         x.map do |y|
