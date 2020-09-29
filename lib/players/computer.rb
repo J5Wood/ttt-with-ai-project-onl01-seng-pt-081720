@@ -8,7 +8,7 @@ module Players
       edge = [2,4,6,8]
       if !input.taken?(5)
         5
-        binding.pry
+        # binding.pry
       elsif !input.taken?(corner.sample { |x| x})
         x
       elsif !input.taken?(corner.sample { |x| x})
