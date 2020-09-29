@@ -92,7 +92,7 @@ class Game
       if inp.to_i == 0
         Game.new(Players::Computer.new("X"),Players::Computer.new("O")).play
       elsif inp.to_i == 1
-        Game.new(Players::Human.new("X"),Players::Computer.new("O"))
+        Game.new(Players::Human.new("X"),Players::Computer.new("O")).play
       else
       puts "Please decide who wants to be 'X' and go first."
         Game.new(Players::Human.new("X"),Players::Human.new("O"))
