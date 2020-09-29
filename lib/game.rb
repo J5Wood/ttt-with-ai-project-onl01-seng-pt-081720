@@ -69,6 +69,7 @@ class Game
   end
 
   def play
+    puts @board.display    
     until self.won? || self.draw?
       self.turn
     end
