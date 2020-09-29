@@ -11,6 +11,8 @@ module Players
         binding.pry
       elsif !input.taken?(corner.sample { |x| x})
         x
+      elsif !input.taken?(corner.sample { |x| x})
+        x
       end
       #first priority is stop 3 in a row
       #selects center first
