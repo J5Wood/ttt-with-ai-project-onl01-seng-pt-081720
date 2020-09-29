@@ -59,13 +59,13 @@ class Game
   end
 
   def turn
-    puts @board.display
     requested_move = current_player.move(@board)
     while !@board.valid_move?(requested_move)
       puts "invalid"
       requested_move = current_player.move(@board)
     end
     @board.update(requested_move, current_player)
+    puts @board.display
   end
 
   def play
