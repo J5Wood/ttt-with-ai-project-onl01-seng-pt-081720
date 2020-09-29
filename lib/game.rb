@@ -94,10 +94,10 @@ class Game
     puts "Please decide who wants to be 'X' and go first."
       Game.new(Players::Human.new("X"),Players::Human.new("O"))
     end
-    
+
 
 
 
   end
-  
+
 end
