@@ -1,12 +1,9 @@
 module Players
-  class Computer < Player
+  class Human < Player
 
     def move(input)
-      #select spot on board
-      #block 
-      #select middle first
-      #select corners second
-      #select
+      puts "Select which space you would like to move to: "
+      gets
     end
 
   end
