@@ -9,8 +9,15 @@ module Players
           optional_moves << x
         end
       end
-      binding.pry
-      optional_moves.first
+      occupied_spaces = []
+      input.cells.each do |x| 
+        if x == self.token
+          occupied_spaces << x
+        end
+      end
+          
+          
+      # optional_moves.first
     end
 
   end
