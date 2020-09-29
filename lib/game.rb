@@ -80,7 +80,7 @@ class Game
 
 
 
-  def start
+  def self.start
     puts ""
     puts "Welcome to TicTacToe!"
     puts ""
