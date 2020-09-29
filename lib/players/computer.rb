@@ -10,7 +10,7 @@ module Players
       move_list.map do |x|
         # binding.pry
         if !input.taken?(x)
-          optional_moves << x  
+          optional_moves << x
         end
       end
       binding.pry
