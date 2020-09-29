@@ -88,12 +88,12 @@ class Game
     puts ""
     puts "Would you like to play with zero, one or two players?"
     inp = gets
-    until inp == "exit"
-      if inp == "zero"
+    while inp != "exit"
+      if inp.to_i == 0
         Game.new(Players::Computer.new("X"),Players::Computer.new("O")).play
-      elsif inp == "one"
+      elsif inp.to_i == 1
         Game.new(Players::Human.new("X"),Players::Computer.new("O")).play
-      elsif inp == "two"
+      elsif inp.to_i == 2
       puts "Please decide who wants to be 'X' and go first."
         Game.new(Players::Human.new("X"),Players::Human.new("O")).play
       elsif inp == "exit"
