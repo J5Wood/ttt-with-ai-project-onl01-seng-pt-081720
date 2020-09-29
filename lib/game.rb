@@ -102,5 +102,4 @@ class Game
       inp = gets
     end
   end
-  end
 end
