@@ -30,7 +30,7 @@ module Players
         end
       end
       binding.pry
-      
+
       # optional_moves.first
     end
 better_chance = []
@@ -41,7 +41,7 @@ good_chance.select do |element|
     end
   end
 end
-      
+
 
   end
 end
