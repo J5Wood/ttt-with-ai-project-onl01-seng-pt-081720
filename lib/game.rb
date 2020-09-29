@@ -88,6 +88,7 @@ class Game
     puts ""
     puts "Would you like to play with zero, one or two players?"
     inp = gets
+    until inp == "exit"
       if inp == "zero"
         Game.new(Players::Computer.new("X"),Players::Computer.new("O")).play
       elsif inp == "one"
