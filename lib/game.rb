@@ -86,8 +86,8 @@ class Game
     puts "Welcome to TicTacToe!"
     puts ""
     puts "Would you like to play with 0, 1 or 2 players?"
-    input = gets
     while input != "exit"
+      input = gets
       if input.to_i == 0
         Game.new(Players::Computer.new("X"),Players::Computer.new("O"))
       elsif input.to_i == 1
