@@ -28,9 +28,8 @@ module Players
           end
         end
       end
-      # binding.pry
       better_chance = good_chance.combination(2).select {|a, b| a == b }
-      better_selection = better_chance[0]
+      better_selection = better_chance[0].uniq
       binding.pry
       # better_chance.each do |x|
       #   # x.uniq.each do |y|
