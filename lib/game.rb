@@ -99,12 +99,7 @@ class Game
       puts "Thanks for playing!"
       puts "You can exit by typing 'exit' or simply hit enter to play again!"
       inp = gets
-
     end
 
-
-
-
   end
-
 end
