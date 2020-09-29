@@ -30,17 +30,10 @@ module Players
         end
       end
       binding.pry
+      better_chance = good_chance.combination(2).select {|a, b| a == b }
 
       # optional_moves.first
     end
-better_chance = []
-good_chance.select do |element|
-  good_chance.select do |other|
-    if element == other
-      better_chance << element
-    end
-  end
-end
 
 
   end
