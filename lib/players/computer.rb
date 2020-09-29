@@ -9,6 +9,7 @@ module Players
           optional_moves << x
         end
       end
+      binding.pry
       optional_moves.first
     end
 
