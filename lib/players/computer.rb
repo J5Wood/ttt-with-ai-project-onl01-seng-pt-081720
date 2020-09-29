@@ -18,7 +18,6 @@ module Players
         binding.pry
       end
 
-input.cells=[" ", "X", " ", "X", " ", " ", " ", "X", " "]
 
       # optional_moves.first
     end
