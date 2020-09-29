@@ -6,7 +6,6 @@ module Players
       center = 5
       corner = [1,3,7,9]
       edge = [2,4,6,8]
-      binding.pry
       if !input.taken?(5)
         5
         binding.pry
