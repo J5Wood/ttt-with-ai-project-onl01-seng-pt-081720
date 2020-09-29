@@ -28,7 +28,7 @@ module Players
             good_chance << x
           end
         end
-        good_chance
+        binding.pry
       end
       # optional_moves.first
     end
