@@ -90,7 +90,7 @@ class Game
     until inp == "exit"
       inp = gets
       if inp.to_i == 0
-        Game.new(Players::Computer.new("X"),Players::Computer.new("O"))
+        Game.new(Players::Computer.new("X"),Players::Computer.new("O")).play
       elsif inp.to_i == 1
         Game.new(Players::Human.new("X"),Players::Computer.new("O"))
       else
