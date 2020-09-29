@@ -59,7 +59,7 @@ class Game
   end
 
   def turn
-    puts @board
+    puts @board.cells
     requested_move = current_player.move(@board)
     while !@board.valid_move?(requested_move)
       puts "invalid"
