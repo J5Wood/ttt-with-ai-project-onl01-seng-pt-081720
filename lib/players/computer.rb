@@ -32,7 +32,7 @@ module Players
       better_selection = better_chance[0].uniq
       binding.pry
       better_selection.each do |x|
-        if occupied_spaces.include?(x) && input.valid_move?(x)
+        if !occupied_spaces.include?(x) && input.valid_move?(x)
           x
           binding.pry
         end
